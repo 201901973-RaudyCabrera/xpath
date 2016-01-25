@@ -11,12 +11,12 @@ doc = etree.parse(contenido)
 print ("'q' for exit...")
 
 consulta=raw_input("XPATH:")
-res=""
 while consulta!="q":
 	try:
 		res=doc.xpath(consulta)
 	except:
 		print "Error en consulta XPATH."
+		res=[]
 		
 	for r in res:
 		if isinstance(r,etree._Element):
