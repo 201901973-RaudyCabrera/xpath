@@ -2,7 +2,12 @@
 # -*- coding: utf-8 -*-
 
 from lxml import etree
-doc = etree.parse('book.xml')
+
+with open("xpath.cfg", "r") as archivo: 
+    contenido = archivo.read() 
+contenido=contenido[:-1]
+
+doc = etree.parse(contenido)
 raiz=doc.getroot()
 print ("'q' for exit...")
 
