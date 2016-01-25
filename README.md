@@ -40,8 +40,19 @@ Todas las búsquedas se hacen desde el nodo raíz.
 
 	* /bookstore/book: Selecciona todos los nodos "book" que están en la ruta.
 	* //year: Selecciona todos los nodos "year" a partir del nodo raíz.
-	* /bookstore/book/title/text(): Selecciona todos los nodos texto (información) de los elementos selccionados con la ruta.
-	* /bookstore/book/title/@lang: Selecciona todos los atributos llamados "lang" de los elementos selccionados con la ruta.
+	* /bookstore/book/title/text(): Selecciona todos los nodos texto (información) de los elementos seleccionados con la ruta.
+	* /bookstore/book/title/@lang: Selecciona todos los atributos llamados "lang" de los elementos seleccionados con la ruta.
 	* . : Selecciona el nodo actual.
 	* .. : Selecciona al nodo padre.
 
+2. Filtrado de nodos:
+
+	* /bookstore/book[title="Everyday Italian"]: Predicado que filtra de todos los nodos seleccionados con la ruta, aquellos que tienen un nodo hijo cuya información coincide con la indicada.
+	* /bookstore/book[year>2005]: En este caso se hace una comparación numérica.
+	* /bookstore/book/title[@lang="en": Ahora la selección se hace con un atributo.
+	* /bookstore/book/title[@lang="en"]/text(): Ejemplo igual que el anterior, pero en este caso se selecciona el nodo texto (información).
+	* //book[@category="CHILDREN" and price="29.99"]: Se pueden utilizar expresiones lógicas: and y or.
+
+3. Funciones xpath
+
+En este [documento](http://www.etsii.urjc.es/~smontalvo/oa/teoria/FUNCIONESXPATH.pdf) puedes ver una lista de las funciones que puedes usar.
