@@ -17,12 +17,14 @@ while consulta!="q":
 	except:
 		print "Error en consulta XPATH."
 		res=[]
-		
-	for r in res:
-		if isinstance(r,etree._Element):
-			print etree.tostring(r,pretty_print=True)
-		else:
-			print r
+	if isinstance(res,list):	
+		for r in res:
+			if isinstance(r,etree._Element):
+				print etree.tostring(r,pretty_print=True)
+			else:
+				print r
+	else:
+		print res
 	consulta=raw_input("XPATH:")
 
 
