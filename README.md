@@ -2,19 +2,19 @@
 
 Ejemplos de consultas xpath, con python!!!
 
-###Prerquisitos
+## Prerquisitos
 
 Para que el progrma funcione hay que instalar la libreria lxml:
 
 	apt-get install python-lxml
 
-###Usando el programa
+## Usando el programa
 
 En el fichero xpath.cfg indicamos el fichero XML con el que vamos a trabajar. También se puede indicar una URL. A continuación simplemente ejecutamos el programa:
 
 	python xpath.py
 
-###Ejemplos de consultas xpath
+## Ejemplos de consultas xpath
 
 Estos ejemplos se hacen sobre el fichero book.xml:
 
