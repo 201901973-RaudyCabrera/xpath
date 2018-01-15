@@ -45,7 +45,7 @@ Todas las búsquedas se hacen desde el nodo raíz.
 	* /bookstore/book/title/@lang: Selecciona todos los atributos llamados "lang" de los elementos seleccionados con la ruta.
 	* . : Selecciona el nodo actual.
 	* .. : Selecciona al nodo padre.
-	* * : Selecciona todos los nodos
+	* \* : Selecciona todos los nodos
 
 2. Filtrado de nodos:
 
