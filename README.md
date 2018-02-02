@@ -40,12 +40,12 @@ Todas las búsquedas se hacen desde el nodo raíz.
 1. Ruta de localización:
 
 	* `/bookstore/book`: Selecciona todos los nodos "book" que están en la ruta.
-	* //year: Selecciona todos los nodos "year" a partir del nodo raíz.
-	* /bookstore/book/title/text(): Selecciona todos los nodos texto (información) de los elementos seleccionados con la ruta.
-	* /bookstore/book/title/@lang: Selecciona todos los atributos llamados "lang" de los elementos seleccionados con la ruta.
-	* . : Selecciona el nodo actual.
-	* .. : Selecciona al nodo padre.
-	* \* : Selecciona todos los nodos
+	* `//year`: Selecciona todos los nodos "year" a partir del nodo raíz.
+	* `/bookstore/book/title/text()`: Selecciona todos los nodos texto (información) de los elementos seleccionados con la ruta.
+	* `/bookstore/book/title/@lang`: Selecciona todos los atributos llamados "lang" de los elementos seleccionados con la ruta.
+	* `.` : Selecciona el nodo actual.
+	* `..` : Selecciona al nodo padre.
+	* `*` : Selecciona todos los nodos
 
 2. Filtrado de nodos:
 
