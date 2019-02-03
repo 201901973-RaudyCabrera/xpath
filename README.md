@@ -6,17 +6,17 @@ Ejemplos de consultas xpath, con python!!!
 
 Para que el progrma funcione hay que instalar la libreria lxml:
 
-	apt-get install python-lxml
+	apt-get install python3-lxml
 
 ## Usando el programa
 
 En el fichero xpath.cfg indicamos el fichero XML con el que vamos a trabajar. También se puede indicar una URL. A continuación simplemente ejecutamos el programa:
 
-	python xpath.py
+	python3 xpath.py
 
 ## Ejemplos de consultas xpath
 
-Estos ejemplos se hacen sobre el fichero book.xml:
+Estos ejemplos se hacen sobre el fichero `book.xml`:
 
 	<?xml version="1.0" encoding="utf-8"?>
 	<bookstore>
@@ -55,10 +55,9 @@ Todas las búsquedas se hacen desde el nodo raíz.
 	* `/bookstore/book/title[@lang="en"]/text()`: Ejemplo igual que el anterior, pero en este caso se selecciona el nodo texto (información).
 	* `//book[@category="CHILDREN" and price="29.99"]`: Se pueden utilizar expresiones lógicas: and y or.
 
-3. Funciones xpath
+3. Algunas funciones xpath
 
 	* `count(book/title)`: Devuelve el número de nodos seleccionados.
 	* `sum(//book/price)`: Devuelve la suma de los valores de los nodos seleccionados.
 	* `//book/author[contains(text(),'De')]`: Devuelve los autores cuya información contine la subcadena "De".
 
-En este [documento](http://www.etsii.urjc.es/~smontalvo/oa/teoria/FUNCIONESXPATH.pdf) puedes ver una lista de las funciones que puedes usar.

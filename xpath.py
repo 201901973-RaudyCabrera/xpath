@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
 
 from lxml import etree
 
@@ -20,11 +19,11 @@ while consulta!="q":
 	if isinstance(res,list):	
 		for r in res:
 			if isinstance(r,etree._Element):
-				print (etree.tostring(r,pretty_print=True).decode("utf-8") )
+				print (etree.tostring(r,pretty_print=True) )
 			else:
-				print (str(r.decode("utf-8")))
+				print (str(r))
 	else:
-		print (str(res.decode("utf-8")))
+		print (str(res))
 	consulta=input("XPATH:")
 
 
